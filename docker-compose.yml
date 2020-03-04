@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nodejs:
+    container_name: react_nodejs
+    build: .
+    volumes:
+      - /home/pavel/projects/react/udemy:/home
+    ports:
+      - 3010:3010
+    tty: true
